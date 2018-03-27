@@ -138,6 +138,7 @@ rt.setQ((byte) 6);
 			if (rd == null) {
 				cb(EmCb.ErrConnect);
 			} else {
+				rd.onMessageNotificationReceived.clear();
 				rd.onMessageNotificationReceived.add(this);
 			}
 		}
