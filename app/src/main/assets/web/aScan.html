@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ascan</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
+		<meta charset="utf-8" />
+		<link href="css/base.css" rel="stylesheet" type="text/css" />
+		<link href="css/demo.css" rel="stylesheet" type="text/css" />
+		<script src="js/rfid.js"></script>
+		<script src="js/aScan.js"></script>
+
+		<style type="text/css">
+			.barBody {
+				width: 92%;
+				margin: 0 auto;
+			}
+			.mfs {
+				line-height: 2;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="boso" class="boso Lc_noadr">
+			<div class="barBody">
+				<div id="ring" class="ring" onclick="dat.chgSound();"></div>
+				<div id="unit" class="mfs">乌鲁木齐客运段</div>
+				<div id="num" class="mfs">车号 ：</div>
+				<!-- <input id="num" class="sfs txtt" type="number" placeholder="请输入车号（六个数字）"></input> -->
+				<div id="note" class="note sfs"></div>
+				<div class="midOut th">
+					<div class="k mfs">品名</div><!--
+					--><div class="v mfs">数量</div>
+				</div>
+				<div class="midOut td" onclick="dat.detail(1);">
+					<div class="k mfs">小单</div><!--
+					--><div id="count1" class="v bfs">0</div>
+				</div>
+				<div class="midOut td" onclick="dat.detail(2);">
+					<div class="k mfs">被套</div><!--
+					--><div id="count2" class="v bfs">0</div>
+				</div>
+				<div class="midOut td" onclick="dat.detail(3);">
+					<div class="k mfs">枕套</div><!--
+					--><div id="count3" class="v bfs">0</div>
+				</div>
+			</div>
+			<div class="bar">
+				<div class="btn btn1" onclick="dat.save();">
+					<div class="midTop"></div>
+					<div class="midSub mfs">保存</div>
+				</div>
+			</div>
+			<div id="detailDom" class="Lc_nosee"></div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		document.body.onload = init;
+	</script>
+</html>

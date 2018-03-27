@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Qry</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
+		<meta charset="utf-8" />
+		<link href="css/base.css" rel="stylesheet" type="text/css" />
+		<link href="css/demo.css" rel="stylesheet" type="text/css" />
+		<script src="js/rfid.js"></script>
+		<script src="js/qry.js"></script>
+
+		<style type="text/css">
+		</style>
+	</head>
+
+	<body>
+		<div id="boso" class="boso Lc_noadr">
+				<div class="row">
+					<div class="midTop"></div><!--
+					--><div class="midSub mfs">乌鲁木齐客运段</div>
+				</div>
+				<div class="row3">
+					<div class="row4">
+						<div class="midTop"></div><!--
+						--><div class="midSub sfs">起始日期：</div><!--
+						--><div id="timmin" class="midSub sfs" onclick="dat.datePicker(true);"></div>
+					</div>
+					<div class="row4">
+						<div class="midTop"></div><!--
+						--><div class="midSub sfs">结束日期：</div><!--
+						--><div id="timmax" class="midSub sfs" onclick="dat.datePicker(false);"></div>
+					</div>
+					<div class="row4">
+						<div class="midTop"></div><!--
+						--><div class="midSub sfs">车号：</div><!--
+						--><div id="num" class="midSub sfs numall" onclick="dat.chgNum();">点此选择车号</div>
+					</div>
+					<div class="today mfs" onclick="dat.today();">当天</div>
+				</div>
+				<div class="row th2">
+					<div class="midTop"></div><!--
+					--><div class="midSub kmid ktw sfs">时间</div><!--
+					--><div class="midSub knw sfs">车号</div><!--
+					--><div class="midSub kpw sfs">品名</div><!--
+					--><div class="midSub kcw sfs">数量</div>
+					<div class="line"></div>
+				</div>
+
+				<div id="rom" class="rowDown"></div>
+
+				<div id="total" class="row2 sfs">总计 ： </div>
+				<div class="row2">
+					<div class="midTop"></div><!--
+					--><div id="typDom0" class="midSub typ mfs typscd" onclick="dat.chgTyp(0);">
+						<div>全部</div>
+					</div><!--
+					--><div id="typDom1" class="midSub typ mfs" onclick="dat.chgTyp(1);">
+						<div>小单</div>
+					</div><!--
+					--><div id="typDom2" class="midSub typ mfs" onclick="dat.chgTyp(2);">
+						<div>被套</div>
+					</div><!--
+					--><div id="typDom3" class="midSub typ mfs" onclick="dat.chgTyp(3);">
+						<div>枕套</div>
+					</div>
+				</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		document.body.onload = init;
+	</script>
+</html>

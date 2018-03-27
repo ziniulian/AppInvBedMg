@@ -1,0 +1,111 @@
+
+/*---------------------- 上下分割布局 ----------------------*/
+
+a {
+	color: #222;
+}
+
+.boso {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.barOut {
+	width: 100%;
+	height: 90%;
+}
+
+.barBody {
+	width: 100%;
+	height: 90%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.bar {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10%;
+}
+
+/*---------------------- 按钮样式 ----------------------*/
+
+.btn {
+	display: inline-block;
+	height: 100%;
+	cursor: pointer;
+	text-align: center;
+	overflow: hidden;
+	background-color: #EEE;
+	box-shadow: inset 0 0 0 1px #AAA;
+}
+
+.btn1 {
+	width: 100%;
+}
+
+.btn2 {
+	width: 50%;
+}
+
+.btn3 {
+	width: 33%;
+}
+
+.btn3m {
+	width: 34%;
+}
+
+.btn4 {
+	width: 25%;
+}
+
+.btns {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.subbtn {
+	display: inline-block;
+	width: 80%;
+	cursor: pointer;
+	font-size: 1.2rem;
+	line-height: 2;
+	border-radius: 5rem;
+	background-color: #FF0;
+	box-shadow: inset -0.2rem -0.3rem 1rem 0 #999;
+}
+
+/*---------------------- 列表样式 ----------------------*/
+
+.out {
+	display: inline-block;
+	vertical-align: middle;
+	width: 80%;
+}
+
+.txt {
+	overflow: hidden;
+	word-break: break-all;
+}
+
+.tim {
+    padding: 0 5%;
+	overflow: hidden;
+    text-align: right;
+    font-style: italic;
+    color: #AAA;
+}
+
+.op {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20%;
+	overflow: hidden;
+	text-align: center;
+}
+.op a {
+    color: red;
+}
